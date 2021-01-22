@@ -1,0 +1,41 @@
+.bodyImageAds1 {
+  width: 100%;
+}
+
+.bodyImageAds2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.bodyFreshRecommendation {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bodyTitle1 {
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+
+}
+
+.bodyLastSearch {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f5e8e6;
+}
+
+.bodyTitle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 60px;
+}

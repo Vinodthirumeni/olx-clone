@@ -1,0 +1,104 @@
+.header {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  height: 40px;
+}
+
+.headerTopLeft {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.headerTopCenter {
+  display: flex;
+  flex: 4;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerTopRight {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 15px;
+}
+
+.headerTopLeft > img {
+  width: 38px;
+  height: 28px;
+}
+
+.headerTopRightPeople {
+  width: 24px;
+  height: 24px;
+}
+
+.headerTopCenter > input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #002f34;
+  border-radius: 3px;
+  display: block;
+}
+
+.headerTopLeft > .MuiFormControl-root > .MuiInputBase-root {
+  margin-top: 0px;
+  border: 1px solid #002f34;
+  padding: 2px;
+  border-radius: 3px;
+  min-width: 250px;
+}
+
+.headerTopRight > .MuiFormControl-root > .MuiInputBase-root {
+  margin-top: 0px;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.headerTopRightSell {
+  width: 104;
+  height: 48;
+}
+
+.headerTopCenterSearch {
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  background-color: #002f34;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.headerTopCenterSearch > .MuiSvgIcon-root {
+  color: white;
+}
+
+.headerBottom {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.headerBottom > a {
+  text-decoration: none;
+  color: black;
+}
+
+.dsdsdsd {
+  margin-right: 10px;
+}

@@ -1,0 +1,53 @@
+.lastSearch {
+  height: 350px;
+  width: 290px;
+  border: 1px solid lightgray;
+  margin: 8px;
+  background-color: white;
+}
+
+.lastSearch:hover {
+  border: 1px solid gray;
+}
+
+.lastSearchAdsImg {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  position: relative;
+}
+
+.lastSearchAdsImg > a > img {
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+}
+
+.lastSearchAdsFooter {
+  margin: 15px;
+}
+
+.lastSearchAdsFooterPrice {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.lastSearchAdsFooterDesc {
+  font-weight: 400;
+  font-size: 14px;
+  color: gray;
+}
+
+.lastSearchAdsFooterPlace {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: gray;
+  margin-top: 25px;
+}
+
+.lastSearchAdsImg > .MuiSvgIcon-root {
+  position: absolute;
+  right: 5px;
+  top: -5px;
+}
