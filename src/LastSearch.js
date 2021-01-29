@@ -2,7 +2,6 @@ import React from "react";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import "./LastSearch.css";
 import { Link } from "react-router-dom";
-
 function LastSearch({ src, title, price, place, time }) {
   return (
     <div className="lastSearch">
@@ -23,5 +22,4 @@ function LastSearch({ src, title, price, place, time }) {
     </div>
   );
 }
-
 export default LastSearch;

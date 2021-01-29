@@ -6,13 +6,10 @@ import ShareOutlinedIcon from "@material-ui/icons/ShareOutlined";
 import FavoriteBorderOutlinedIcon from "@material-ui/icons/FavoriteBorderOutlined";
 import Ads6 from "./logos/ads6.png";
 import Ads7 from "./logos/ads7.png";
-
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
-
 function AdsPage() {
   const { id } = useParams("");
   const [ads, setAds] = useState([]);
-
   useEffect(() => {
     if (id) {
       db.collection("ads")
@@ -20,7 +17,6 @@ function AdsPage() {
         .onSnapshot((snapshot) => setAds(snapshot.data()));
     }
   }, [id]);
-
   return (
     <div className="adsPage">
       <div className="adsPageLeft">
@@ -36,7 +32,6 @@ function AdsPage() {
         </div>
       </div>
       <div className="adsPageRight">
-
         <div className="adsPageRighTop">
           <div className="adsPageRighTopPrice">
             <p>{ads.price}</p>
@@ -53,7 +48,6 @@ function AdsPage() {
             </div>
           </div>
         </div>
-
         <div className="adsPageRighMiddle">
           <p>Seller description</p>
           <div className="adsPageRighMiddleUser">
@@ -71,15 +65,13 @@ function AdsPage() {
             <p>Make an offer</p>
           </div>
         </div>
-
         <div className="adsPageRightBottom">
-        <h6>Posted in</h6>
-        <p>Chennai, Tamil Nadu</p>
-        <img src={Ads7} alt="#map"/>
-        </div>  
+          <h6>Posted in</h6>
+          <p>Chennai, Tamil Nadu</p>
+          <img src={Ads7} alt="#map" />
+        </div>
       </div>
     </div>
   );
 }
-
 export default AdsPage;

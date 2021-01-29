@@ -1,91 +1,78 @@
 .header {
-  margin-top: 15px;
-  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
-
 .headerTop {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: #f7f7f7;
+  display: flex;
   height: 40px;
+  justify-content: space-between;
 }
-
 .headerTopLeft {
+  align-items: center;
   display: flex;
   flex: 2;
-  align-items: center;
   justify-content: space-between;
   margin-left: 15px;
 }
-
 .headerTopCenter {
+  align-items: center;
   display: flex;
   flex: 4;
-  align-items: center;
   justify-content: space-between;
 }
-
 .headerTopRight {
+  align-items: center;
   display: flex;
   flex: 2;
-  align-items: center;
   justify-content: space-between;
   margin-right: 15px;
 }
-
 .headerTopLeft > img {
-  width: 38px;
   height: 28px;
+  width: 38px;
 }
-
 .headerTopRightPeople {
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
-
 .headerTopCenter > input {
-  flex: 1;
-  padding: 10px;
   border: 1px solid #002f34;
   border-radius: 3px;
   display: block;
+  flex: 1;
+  padding: 10px;
 }
-
 .headerTopLeft > .MuiFormControl-root > .MuiInputBase-root {
-  margin-top: 0px;
   border: 1px solid #002f34;
-  padding: 2px;
   border-radius: 3px;
+  margin-top: 0px;
   min-width: 250px;
+  padding: 2px;
 }
-
 .headerTopRight > .MuiFormControl-root > .MuiInputBase-root {
+  border-radius: 3px;
   margin-top: 0px;
   padding: 2px;
-  border-radius: 3px;
 }
-
 .headerTopRightSell {
-  width: 104;
   height: 48;
+  width: 104;
 }
-
 .headerTopCenterSearch {
-  width: 24px;
+  background-color: #002f34;
+  border-radius: 3px;
+  cursor: pointer;
   height: 24px;
   padding: 8px;
-  background-color: #002f34;
-  cursor: pointer;
-  border-radius: 3px;
+  width: 24px;
 }
-
 .headerTopCenterSearch > .MuiSvgIcon-root {
   color: white;
 }
-
 .headerBottom {
   display: flex;
   justify-content: space-between;
@@ -93,12 +80,75 @@
   margin-right: 15px;
   margin-top: 10px;
 }
-
 .headerBottom > a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
-
-.dsdsdsd {
-  margin-right: 10px;
+@media only screen and (max-width: 767px) {
+  .header {
+    margin: 0;
+  }
+  .headerTopLeft {
+    flex: 2;
+    margin-right: 10px;
+  }
+  .headerTopCenter {
+    flex: 6;
+    margin-right: 10px;
+  }
+  .headerTopRight {
+    flex: 2;
+  }
+  .headerBottom > a {
+    display: none;
+  }
+  .headerTopLeft > .MuiFormControl-root {
+    display: none;
+  }
+  .headerTopRight > .MuiFormControl-root {
+    display: none;
+  }
+  .headerTopRight > .MuiSvgIcon-root {
+    display: none;
+  }
+  .headerTopCenterSearch {
+    display: none;
+  }
+  .headerTopRightPeople {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .header {
+    margin: 0;
+  }
+  .headerTopLeft {
+    flex: 2;
+    margin-right: 10px;
+  }
+  .headerTopCenter {
+    flex: 6;
+    margin-right: 10px;
+  }
+  .headerTopRight {
+    flex: 2;
+  }
+  .headerBottom > a {
+    display: none;
+  }
+  .headerTopLeft > .MuiFormControl-root {
+    display: none;
+  }
+  .headerTopRight > .MuiFormControl-root {
+    display: none;
+  }
+  .headerTopRight > .MuiSvgIcon-root {
+    display: none;
+  }
+  .headerTopCenterSearch {
+    display: none;
+  }
+  .headerTopRightPeople {
+    display: none;
+  }
 }

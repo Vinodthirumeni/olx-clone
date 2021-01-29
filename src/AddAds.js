@@ -6,8 +6,6 @@ import firebase from "firebase";
 import { storage } from "./firebase";
 import db from "./firebase";
 import { Link } from "react-router-dom";
-
-
 const useStyles = makeStyles((theme) => ({
   root: {
     "& > *": {
@@ -16,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-
 function AddAds() {
   const classes = useStyles();
   const [title, setTitle] = useState("");
@@ -27,7 +24,6 @@ function AddAds() {
   const [file, setFile] = useState(null);
   const [error, setError] = useState(null);
   const types = ["image/png", "image/jpeg"];
-
   const handleChange = (e) => {
     const selected = e.target.files[0];
     if (selected && types.includes(selected.type)) {
@@ -41,7 +37,6 @@ function AddAds() {
       setImage(e.target.files[0]);
     }
   };
-
   const sendAds = (e) => {
     e.preventDefault();
     const uploadTask = storage.ref(`images/${image.name}`).put(image);
@@ -78,7 +73,6 @@ function AddAds() {
       }
     );
   };
-
   return (
     <div className="addAds">
       <div className="addAdsTitle">
@@ -111,19 +105,19 @@ function AddAds() {
           />
         </form>
       </div>
-
       <label>
         <input type="file" onChange={handleChange} />
-        <div className="addAdsAttachment" ><span>+</span></div>
+        <div className="addAdsAttachment">
+          <span>+</span>
+        </div>
       </label>
       {file && <div>{file.name}</div>}
       <Link to="/">
-      <button type="submit" onClick={sendAds}>
-        Add Ad
-      </button>
+        <button type="submit" onClick={sendAds}>
+          Add Ad
+        </button>
       </Link>
     </div>
   );
 }
-
 export default AddAds;

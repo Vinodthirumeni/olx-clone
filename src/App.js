@@ -4,9 +4,7 @@ import Body from "./Body";
 import Footer from "./Footer";
 import AdsPage from "./AdsPage";
 import AddAds from "./AddAds";
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 function App() {
   return (
     <div className="app">
@@ -28,5 +26,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

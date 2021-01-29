@@ -4,7 +4,6 @@ import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import DeleteOutlineIcon from "@material-ui/icons/DeleteOutline";
 import db from "./firebase";
 import { Link } from "react-router-dom";
-
 function FreshRecommendation({ id, src, title, price, place, time }) {
   const deleteAds = (e) => {
     e.preventDefault();
@@ -13,7 +12,6 @@ function FreshRecommendation({ id, src, title, price, place, time }) {
       db.collection("ads").doc(AdId).delete();
     }
   };
-
   return (
     <div className="freshRecommendation">
       <div className="freshRecommendationAdsImg">
@@ -34,5 +32,4 @@ function FreshRecommendation({ id, src, title, price, place, time }) {
     </div>
   );
 }
-
 export default FreshRecommendation;

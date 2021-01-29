@@ -10,7 +10,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import FormControl from "@material-ui/core/FormControl";
 import NativeSelect from "@material-ui/core/NativeSelect";
 import { Link } from "react-router-dom";
-
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
@@ -20,10 +19,8 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(2),
   },
 }));
-
 function Header() {
   const classes = useStyles();
-
   return (
     <div className="header">
       <div className="headerTop">
@@ -84,5 +81,4 @@ function Header() {
     </div>
   );
 }
-
 export default Header;

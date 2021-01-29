@@ -1,68 +1,118 @@
 .footerAds1,
 .footerLoadMore {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 15px;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
-
 .footerAds2 {
   width: 100%;
 }
-
 .footerMiddle {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 20px;
 }
-
 .footerMiddlePara {
   display: flex;
   flex-direction: column;
-  justify-content: ;
 }
-
 .footerMiddlePara > a {
-  text-decoration: none;
   color: gray;
+  text-decoration: none;
 }
-
 .footerMiddleParaIcons {
   display: flex;
 }
-
 .footerMiddleTitle {
   margin-bottom: 15px;
 }
-
 .footerMiddleParaIcons > .MuiSvgIcon-root {
   color: #002f34;
   margin-right: 5px;
 }
-
 .footerMiddlePara > img {
   margin-top: 30px;
 }
-
 .footerMiddlePara > p {
   color: #002f34;
   font-weight: bold;
 }
-
 .footerBottom {
+  background-color: #002f34;
   display: flex;
   justify-content: space-between;
-  background-color: #002f34;
   margin-top: 15px;
 }
-
 .footerBottom > a {
   color: white;
+  margin: 15px;
   margin-left: 20px;
   margin-right: 20px;
-  margin: 15px;
   text-decoration: none;
+}
+@media only screen and (max-width: 767px) {
+  .footer {
+    width: 100%;
+  }
+  .footerAds1 > img {
+    width: 100%;
+  }
+  .footerMiddle {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .footerMiddlePara {
+    align-items: center;
+    margin-bottom: 5px;
+    width: 50%;
+  }
+  .footerMiddlePara > a {
+    font-size: 8px;
+  }
+  .footerMiddleTitle {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .footerBottom > a {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .footer {
+    width: 100%;
+  }
+  .footerAds1 > img {
+    width: 100%;
+  }
+  .footerMiddle {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .footerMiddlePara {
+    align-items: center;
+    margin-bottom: 5px;
+    width: 50%;
+  }
+  .footerMiddlePara > a {
+    font-size: 8px;
+  }
+  .footerMiddleTitle {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .footerBottom > a {
+    font-size: 10px;
+  }
 }

@@ -6,11 +6,9 @@ import FreshRecommendation from "./FreshRecommendation";
 import Ads from "./ads";
 import LastSearch from "./LastSearch";
 import db from "./firebase";
-
 function Body() {
   const [ads, setAds] = useState([]);
   const [lastAds, setLastAds] = useState([]);
-
   useEffect(() => {
     setLastAds(Ads.categories[0].lastSearchAds);
     // setAds(Ads.categories[0].mainAds);
@@ -23,7 +21,6 @@ function Body() {
       )
     );
   }, []);
-
   return (
     <div className="body">
       <div className="bodyImage">
@@ -36,7 +33,6 @@ function Body() {
         <p className="bodyTitle1">Based on your last search</p>
         <a href="#">View more</a>
       </div>
-
       <div className="bodyLastSearch">
         {lastAds.map((ad) => (
           <LastSearch
@@ -64,5 +60,4 @@ function Body() {
     </div>
   );
 }
-
 export default Body;

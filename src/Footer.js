@@ -7,7 +7,6 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
-
 function Footer() {
   return (
     <div className="footer">
@@ -74,5 +73,4 @@ function Footer() {
     </div>
   );
 }
-
 export default Footer;
